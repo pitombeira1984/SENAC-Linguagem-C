@@ -1,13 +1,17 @@
 #include <iostream>
 #include <string>
 
-int main(){
-    std::string nome;
+using namespace std;
 
-    std::cout << "Digite seu nome: ";
-    std::getline(std::cin, nome);
+int main() {
 
-    std::cout << "Ola, "<< nome <<"! Seja bem vindo! " << std::endl;
+    string nome;
+
+    cout << "Digite seu nome completo: ";
+    getline(cin, nome);//Entrada de dados composta. Copilador lê nome completo
+
+    cout << "Ola, " << nome << "seja bem vindo !";
 
     return 0;
+
 }
